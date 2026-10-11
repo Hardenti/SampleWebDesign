@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Samples | Tiyana Harden</title>
+  <meta name="description" content="Sample Facebook and Instagram mockups for a nuclear security and campus engagement brand." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: #07111f;
+    }
+
+    .sample-shell {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1rem 5rem;
+    }
+
+    .sample-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .sample-header h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3rem);
+      letter-spacing: -0.05em;
+    }
+
+    .back-link {
+      color: var(--text);
+      border: 1px solid var(--line);
+      padding: 0.75rem 1.1rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.02);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .social-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .mockup-card {
+      background: rgba(14, 25, 36, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .mockup-top {
+      padding: 1.1rem 1.2rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-weight: 700;
+    }
+
+    .brand-pill span {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #79d5c5, #f4c76a);
+      color: #07111f;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+
+    .platform-tag {
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(121, 213, 197, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .mockup-body {
+      padding: 1.2rem;
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #10263a, #79d5c5);
+      border: 2px solid rgba(121, 213, 197, 0.35);
+    }
+
+    .post-hero {
+      margin-top: 1rem;
+      height: 0;
+      border-radius: 18px;
+      background: transparent;
+      border: none;
+    }
+
+    .post-copy {
+      margin-top: 1rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .stats-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      margin-top: 1rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .instagram-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.8rem;
+    }
+
+    .ig-feed {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.55rem;
+      margin-top: 1rem;
+    }
+
+    .ig-feed div {
+      height: 120px;
+      border-radius: 12px;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid var(--line);
+    }
+
+    .linkedin-card {
+      background: rgba(14, 25, 36, 0.86);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .linkedin-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.1rem 1.2rem;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .linkedin-body {
+      padding: 1.2rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .linkedin-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text);
+      margin: 0 0 0.7rem;
+    }
+
+    .linkedin-tag {
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(121, 213, 197, 0.12);
+      color: var(--primary);
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .ig-1 { background: rgba(255,255,255,0.02); border: 1px solid var(--line); }
+    .ig-2 { background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80'); }
+    .ig-3 { background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=500&q=80'); }
+    .ig-4 { background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=500&q=80'); }
+    .ig-5 { background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80'); }
+    .ig-6 { background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80'); }
+
+    @media (max-width: 860px) {
+      .social-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sample-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sample-shell">
+    <header class="sample-header">
+      <h1>Social Media Samples</h1>
+      <a class="back-link" href="index.html">Back to Home</a>
+    </header>
+
+    <div class="social-grid">
+      <section id="facebook-sample" class="mockup-card">
+        <div class="mockup-top">
+          <div class="brand-pill">
+            <span>NS</span>
+            Secure Campus Network
+          </div>
+          <div class="platform-tag">Facebook</div>
+        </div>
+
+        <div class="mockup-body">
+          <div class="status-bar">
+            <div class="avatar"></div>
+            <div>
+              <strong>Tiyana Harden</strong><br />
+              <span>2 hours ago</span>
+            </div>
+          </div>
+
+          <div class="post-hero" aria-label="Facebook post without image"></div>
+
+          <div class="post-copy">
+            Building the next generation of nuclear security leaders starts with meaningful campus engagement.
+            Research partnerships, student opportunities, and trusted communication create the foundation for
+            workforce readiness and stronger security awareness.
+          </div>
+
+          <div class="stats-row">
+            <span>120 likes</span>
+            <span>34 comments</span>
+            <span>8 shares</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="instagram-sample" class="mockup-card">
+        <div class="mockup-top">
+          <div class="brand-pill">
+            <span>NS</span>
+            Secure Campus Network
+          </div>
+          <div class="platform-tag">Instagram</div>
+        </div>
+
+        <div class="mockup-body instagram-layout">
+          <div class="status-bar">
+            <div class="avatar"></div>
+            <div>
+              <strong>@tiyana.harden</strong><br />
+              <span>Campus engagement • STEM outreach</span>
+            </div>
+          </div>
+
+          <div class="ig-feed">
+            <div class="ig-1"></div>
+            <div class="ig-2"></div>
+            <div class="ig-3"></div>
+            <div class="ig-4"></div>
+            <div class="ig-5"></div>
+            <div class="ig-6"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="linkedin-card" aria-label="LinkedIn sample">
+        <div class="linkedin-header">
+          <div class="brand-pill">
+            <span>NS</span>
+            Secure Campus Network
+          </div>
+          <div class="linkedin-tag">LinkedIn</div>
+        </div>
+
+        <div class="linkedin-body">
+          <div class="status-bar">
+            <div class="avatar"></div>
+            <div>
+              <strong>Tiyana Harden</strong><br />
+              <span>Founder • Nuclear security engagement</span>
+            </div>
+          </div>
+
+          <h3 class="linkedin-title">Professionalism, trust, and mission-focused engagement in nuclear security.</h3>
+
+          <p>
+            In today’s high-stakes environment, nuclear security requires more than technical expertise—it requires
+            trusted communication, strategic outreach, and a strong commitment to public understanding and workforce development.
+          </p>
+
+          <p>
+            I am focused on helping institutions connect research, education, and engagement through clear, credible,
+            and professional communication that supports safety, awareness, and opportunity.
+          </p>
+
+          <div class="stats-row">
+            <span>1,280 followers</span>
+            <span>96 posts</span>
+            <span>14 collaborations</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
